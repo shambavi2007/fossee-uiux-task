@@ -1,0 +1,12 @@
+/* ── Footer ── */
+.footer {
+  background: var(--primary-dark);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: var(--accent-light);
+}

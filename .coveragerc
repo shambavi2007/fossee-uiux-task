@@ -1,18 +1,9 @@
 [run]
-branch = True
 source = .
 omit =
-     *tests*
-     *migrations*
-     *init*
-     local_settings.py
-     workshop_app/apps.py
-     workshop_portal/settings.py
-     workshop_portal/wsgi.py
-
-
-[report]
-exclude_lines =
-    except ImportError:
-    raise NotImplementedError
-    if __name__ == .__main__.:
+    */migrations/*
+    */tests/*
+    manage.py
+    workshop_portal/wsgi.py
+    workshop_portal/settings.py
+    local_settings.py
