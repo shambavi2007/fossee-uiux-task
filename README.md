@@ -12,6 +12,8 @@ Full frontend redesign built with **React + Vite**, replacing the original Djang
 
 ## Visual Showcase
 
+> Before and after UI improvements are shown below for comparison.
+
 ### Before UI
 
 **Booking Page**
@@ -60,26 +62,6 @@ Full frontend redesign built with **React + Vite**, replacing the original Djang
 
 ---
 
-## Reasoning
-
-### Design Principles
-
-The main goal while redesigning was to keep things simple and easy to understand for the user. I focused on visual hierarchy — making sure the important things like headings, buttons, and form fields stand out clearly. Consistent spacing and typography using Poppins font was used throughout all pages so nothing feels out of place. The color scheme was kept minimal with deep blue as the primary color and orange as the accent, which matches FOSSEE's identity. Navigation was made straightforward so users don't have to think twice about where to go.
-
-### Responsiveness
-
-I followed a mobile-first approach because most students and coordinators access websites on their phones. The layout was built using CSS Flexbox and Grid, which naturally adapts to different screen sizes. Media queries were added to handle breakpoints for mobile, tablet, and desktop views. The navbar collapses into a hamburger menu on smaller screens, and multi-column layouts stack into single columns on mobile. I tested the layouts using browser developer tools by simulating different device screen sizes.
-
-### Trade-offs
-
-I decided not to use any heavy UI libraries like Material UI or Bootstrap because they add a lot of extra weight to the project and reduce performance. Instead, plain CSS was written for every component which gave more control over the design. Complex animations were also avoided on purpose — subtle hover effects and transitions were enough to make the UI feel smooth without slowing things down. The focus was always on clarity and usability rather than making things look fancy.
-
-### Challenges
-
-One of the biggest challenges was converting the existing Django HTML templates into proper React components without losing any of the original functionality. It was tricky to figure out which parts of the old UI to keep and which to redesign from scratch. Making the forms fully responsive without breaking the layout on smaller screens took a lot of trial and error, especially the registration form which has many fields. Structuring reusable components like Navbar, Footer, and Layout in a way that works across all pages was also something I had to think through carefully.
-
----
-
 ## Tech Stack
 
 | Layer    | Technology                      |
@@ -112,6 +94,32 @@ One of the biggest challenges was converting the existing Django HTML templates 
 - State-wise and type-wise bar charts
 - Password strength indicator on signup
 - Show/hide password toggle
+
+---
+
+## Reasoning
+
+### What design principles guided your improvements?
+
+The redesign was guided by simplicity, clarity, and consistency. A clean and minimal layout was used to improve readability and reduce user confusion. Visual hierarchy was enhanced using proper spacing, typography, and alignment so that important elements like forms and buttons stand out clearly. Consistent color schemes and reusable components were maintained across all pages to provide a uniform and intuitive user experience.
+
+---
+
+### How did you ensure responsiveness across devices?
+
+A mobile-first approach was followed since the primary users are students accessing the website on mobile devices. Flexible layouts using CSS Flexbox and Grid were used to adapt to different screen sizes. Media queries were applied to adjust layout, spacing, and font sizes for mobile, tablet, and desktop views. The application was tested using browser developer tools to ensure smooth functionality across different devices.
+
+---
+
+### What trade-offs did you make between the design and performance?
+
+To maintain performance, heavy UI libraries and complex animations were avoided. Instead, lightweight CSS and simple design elements were used to ensure faster loading and smoother interactions. While advanced visual effects could improve appearance, priority was given to usability and performance to provide a better user experience.
+
+---
+
+### What was the most challenging part of the task and how did you approach it?
+
+The most challenging part was converting the existing basic interface into a modern React-based UI while preserving the original functionality. Ensuring responsiveness across different devices without breaking the layout was also difficult. This was handled by breaking the UI into reusable components and testing each part individually. Iterative improvements and continuous testing helped in achieving a stable and user-friendly design.
 
 ---
 
